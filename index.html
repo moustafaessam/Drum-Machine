@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="drum-machine">
+      <div id="parent">
+        <div id="pad">
+          <div class="drum-pad" id="Q-pad">
+            <audio src="" class="clip" id="Q"></audio>
+            Q
+          </div>
+          <div class="drum-pad" id="W-pad">
+            <audio src="" class="clip" id="W"></audio>
+            W
+          </div>
+          <div class="drum-pad" id="E-pad">
+            <audio src="" class="clip" id="E"></audio>
+            E
+          </div>
+          <div class="drum-pad" id="A-pad">
+            <audio src="" class="clip" id="A"></audio>
+            A
+          </div>
+          <div class="drum-pad" id="S-pad">
+            <audio src="" class="clip" id="S"></audio>
+            S
+          </div>
+          <div class="drum-pad" id="D-pad">
+            <audio src="" class="clip" id="D"></audio>
+            D
+          </div>
+          <div class="drum-pad" id="Z-pad">
+            <audio src="" class="clip" id="Z"></audio>
+            Z
+          </div>
+          <div class="drum-pad" id="X-pad">
+            <audio src="" class="clip" id="X"></audio>
+            X
+          </div>
+          <div class="drum-pad" id="C-pad">
+            <audio src="" class="clip" id="C"></audio>
+            C
+          </div>
+        </div>
+        <div id="options">
+          <div id="power-box">
+            <p>Power</p>
+            <div id="black-box1">
+              <div class="blue-box" id="power"></div>
+            </div>
+          </div>
+          <div id="display"></div>
+          <input type="range" min="1" max="100" id="range" />
+          <div id="bank-box">
+            <p style="text-align: center">Bank</p>
+            <div id="black-box2">
+              <div class="blue-box" id="bank"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #8d8d8d;
+  font-family: Russo One;
+}
+:root {
+  --pad-color: grey;
+}
+#drum-machine {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#parent {
+  width: 660px;
+  height: 350px;
+  background-color: #b3b3b3;
+  border: 5px solid orange;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+#pad {
+  min-width: 332px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "Q W E" "A S D" "Z XBox C";
+  margin-top: 20px;
+  margin-left: 20px;
+  gap: 10px;
+}
+.drum-pad {
+  background-color: var(--pad-color);
+  box-shadow: black 3px 3px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Q {
+  grid-area: Q;
+}
+#W {
+  grid-area: W;
+}
+#E {
+  grid-area: E;
+}
+#A {
+  grid-area: A;
+}
+#S {
+  grid-area: S;
+}
+#D {
+  grid-area: D;
+}
+#Z {
+  grid-area: Z;
+}
+#X {
+  grid-area: XBox;
+}
+#C {
+  grid-area: C;
+}
+#options {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+#power-box {
+  margin-top: 50px;
+}
+#black-box1 {
+  background-color: black;
+  width: 50px;
+  height: 23px;
+  padding: 1px;
+  border: 1px solid black;
+  display: flex;
+}
+#black-box2 {
+  background-color: black;
+  width: 50px;
+  height: 23px;
+  padding: 1px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.blue-box {
+  width: 50%;
+  height: 19px;
+  border: 1px solid black;
+  background: blue;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#display {
+  width: 200px;
+  background-color: gray;
+  padding: 15px;
+  text-align: center;
+  height: 50px;
+}
+input[type="range"] {
+  appearance: none;
+  width: 220px;
+  height: 5px;
+  background-color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  box-shadow: black 2px 2px 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 30px;
+  background-color: blue;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 2px;
+}
